@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./stylem.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+
+
+    
+    <!-- CODELAB: Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Breathe">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blue">
+    <link rel="apple-touch-icon" href="./sun128.png">
+    <link rel="apple-touch-startup-image" href="./sun128.png">
+    <!-- kososher haye splash screen bara ios here -->
+    <!-- iPhone Xs Max (1242px x 2688px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="./splash/2688px.png"> 
+    <!-- iPhone X, Xs (1125px x 2436px) --> 
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="./splash/2436px.jpg">
+    <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) --> 
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="./splash/2208px.png"> 
+
+
+
+
+    <title>آموزش نفس گیری مایندر</title>
+</head>
+<body>
+    <h2>آموزش نفس گیری در مواقع اضطراب</h2>
+    <button class="btnico" onclick="soundFunction()"><i class="fa fa-music"></i></button>
+    <div class="containerz" id="containerz">
+        <div class="circle"></div>
+        <p id = 'text'>
+            یه نفس عمیق بکش
+        </p>
+        
+        <div class="pointer-container">
+            <span class="pointer">
+
+            </span>
+        </div>
+        <div class="gradient-circle"></div>
+        
+    </div>
+    <!--<audio id="boom" ><source src="audio.mp4" type="audio/mpeg"></audio>-->
+    <a href="https://minderapp.ir" style="color: white; margin-bottom : 25px">همین الان مدیتیشن کن</a>
+
+
+
+
+    <!-- modal for ios and shit -->
+    <div class="modal fade p-0" id="ios-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center mt-5">
+                <img src="sun128.png" width="80" height="80">
+              </div>
+              <div class="col-12 mt-3 mb-4">
+                <h6 class="text-center" id="khaye">نصب نسخه جدید ios اپلیکیشن آپ</h6>
+              </div>
+              <div class="col-12 mb-4">
+                <ul class="list-unstyled m-0 px-3 py-4 bg-light rounded-lg">
+                  <li class="mb-4 text-right">۱- در نوار پایین دکمه share را کلیک کنید.</li>
+                  <li class="mb-4 text-right">۲- در منوی باز شده، در قسمت پایین، گزینه <span class="text-nowrap">Add to Home Screen</span> را انتخاب کنید.</li>
+                  <li class="text-right">۳- در مرحله‌ی بعد در قسمت بالا روی Add بزنید.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-primary btn-block rounded-pill mb-1" data-dismiss="modal">متوجه شدم</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modale kososhere android -->
+  <div class="modal fade p-0" id="android-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 text-center mt-5">
+                  <img src="sun128.png" width="80" height="80">
+                </div>
+                <div class="col-12 mt-3 mb-4">
+                  <h6 class="text-center" id="khaye">نصب نسخه جدید اندروید اپلیکیشن آپ</h6>
+                </div>
+                <div class="col-12 mb-4">
+                  <ul class="list-unstyled m-0 px-3 py-4 bg-light rounded-lg">
+                    <li class="mb-4 text-right">۱- منو را باز کنید.</li>
+                    <li class="mb-4 text-right">۲- در منوی باز شده، گزینه <span class="text-nowrap">Add to Home Screen</span> را انتخاب کنید.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-primary btn-block rounded-pill mb-1" data-dismiss="modal">متوجه شدم</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="swc.js"></script>
+    <script src="./NoSleep.js"></script>
+    <script src="./bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+    
+    <script>
+        var noSleep = new NoSleep();
+        document.addEventListener('click', function enableNoSleep() {
+            document.removeEventListener('click', enableNoSleep, false);
+            noSleep.enable();
+          }, false);
+    </script>
+
+    <script>
+    
+        const isIos = () => {
+          const userAgent = window.navigator.userAgent.toLowerCase();
+          return /iphone|ipad|ipod/.test( userAgent );
+        }
+        // Detects if device is in standalone mode
+        const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+        
+        // Checks if should display install popup notification:
+        if (isIos() && !isInStandaloneMode()) {
+          $('#ios-modal').modal('show');
+        }
+        var ua = navigator.userAgent.toLowerCase();
+        var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+        if(isAndroid && !isInStandaloneMode()) {
+        // Do something!
+        // Redirect to Android-site?
+        $('#android-modal').modal('show');
+        }
+    </script>
+</body>
+</html>

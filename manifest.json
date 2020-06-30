@@ -1,0 +1,23 @@
+{
+    "name" : "نفس بکش",
+    "short_name" : "نفس بکش",
+    "start_url" : "https://sos.minderap.ir/",
+    "scope" : ".",
+    "display" : "fullscreen",
+    "icons" : [
+        {
+            "src" : "./sun512.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        },{
+            "src" : "./sun256.png",
+            "sizes" : "256x256",
+            "type" : "image/png"
+        },{
+            "src" : "./sun128.png",
+            "sizes" : "128x128",
+            "type" : "image/png"
+        }
+    ]
+
+}
